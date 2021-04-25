@@ -7,15 +7,15 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: modresortchan
-      release: modresort-devchan
+      app: modresort
+      release: modresort
       tier: frontend
   replicas: 1
   template:
     metadata:
       labels:
-        app: modresortchan
-        release: modresort-devchan
+        app: modresort
+        release: modresort
         tier: frontend
     spec:
       containers:
