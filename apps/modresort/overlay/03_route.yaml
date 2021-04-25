@@ -1,0 +1,16 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  labels:
+    app: modresort-route
+  name: modresort
+spec:
+  host: 
+  port:
+    targetPort: 9080
+  subdomain: ""
+  to:
+    kind: Service
+    name: modresort-service
+    weight: 100
+  wildcardPolicy: None 
