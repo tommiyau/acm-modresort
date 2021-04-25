@@ -1,0 +1,14 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: modresort-service
+  labels:
+    app: modresort
+spec:
+  type: NodePort
+  ports:
+    - port: 9080
+  selector:
+    app: modresort
+    release: modresort
+    tier: frontend
